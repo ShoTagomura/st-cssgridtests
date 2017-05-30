@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>Grid Design Test#02</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css' />
+		<style type="text/css">
+			body {
+				font-family: 'Open Sans', "メイリオ";
+				margin: 0px;
+				text-align: center;
+				min-height: 100vh;
+			}
+			.gridize {
+				display: -ms-grid;
+				height: 100vh;
+				-ms-grid-columns: 1fr 1fr 1fr 1fr;
+				-ms-grid-rows: 1fr 1fr auto;
+			}
+			.boxa, .boxb, .boxc, .boxd, .boxf {
+				vertical-align:center;
+			}
+			.boxa {
+				width: 100%;
+				padding: 2rem 0rem;
+				background-color: #99ff00;
+				-ms-grid-column: 1;
+				-ms-grid-row: 1;
+				-ms-grid-row-span: 2;
+			}
+			.boxb {
+				width: 100%;
+				padding: 2rem 0rem;
+				background-color: #00ccff;
+				-ms-grid-column: 2;
+				-ms-grid-row: 1;
+			}
+			.boxc {
+				width: 100%;
+				padding: 2rem 0rem;
+				background-color: #0BA60B;
+				-ms-grid-column: 3;
+				-ms-grid-row: 2;
+			}
+			.boxd {
+				width: 100%;
+				padding: 2rem 0rem;
+				background-color: #5383C2;
+				-ms-grid-column: 4;
+				-ms-grid-row: 1;
+			}
+			.boxf {
+				width: 100%;
+				padding: 2rem 0rem;
+				background-color: #F1B709;
+				-ms-grid-column: 1;
+				-ms-grid-row: 3;
+				-ms-grid-column-span: 4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gridize">
+			<div class="boxa">Attection</div>
+			<div class="boxb">Broadcast</div>
+			<div class="boxc">Creations</div>
+			<div class="boxd">Destructs</div>
+			<div class="boxf">Fractions</div>
+		</div>
+	</body>
+</html>
